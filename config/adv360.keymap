@@ -219,7 +219,7 @@
             layers = <0>;
             timeout-ms = <500>;
             key-positions = <66 70>;
-            bindings = <&macro_both CAPS DE_HASH>;
+            bindings = <&macro_both DE_LABK RALT>;
         };
         combo_shift_both {
             layers = <0>;
