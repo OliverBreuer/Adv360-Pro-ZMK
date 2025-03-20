@@ -172,19 +172,19 @@
 
         // Deutsch für Bone
         combo_m3_both {
-            layers = <0>
+            layers = <0>;
             timeout-ms = <50>;
             key-positions = <65 70>;
             bindings = <&kmac_both CAPS DE_HASH>;
         };
         combo_m4_both {
-            layers = <0>
+            layers = <0>;
             timeout-ms = <50>;
             key-positions = <66 70>;
             bindings = <&kmac_both CAPS DE_HASH>;
         };
         combo_shift_both {
-            layers = <0>
+            layers = <0>;
             timeout-ms = <50>;
             key-positions = <69 70>;
             bindings = <&kmac_both LSHFT RSHFT>;
@@ -192,7 +192,7 @@
 
         // DEUTSCH
         combo_de_caps {
-            layers = <3>
+            layers = <3>;
             timeout-ms = <50>;
             key-positions = <69 70>;
             bindings = <&kp CAPS>;
