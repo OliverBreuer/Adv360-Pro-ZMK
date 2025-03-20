@@ -174,37 +174,37 @@
         combo_t1 {
             layers = <0>;
             timeout-ms = <300>;
-            key-positions = <35 70>;
+            key-positions = <35 38>;
             bindings = <&kp N1>;
         };
         combo_t2 {
             layers = <0>;
             timeout-ms = <400>;
-            key-positions = <36 70>;
+            key-positions = <36 38>;
             bindings = <&kp N2>;
         };
         combo_t3 {
             layers = <0>;
             timeout-ms = <500>;
-            key-positions = <52 70>;
+            key-positions = <52 38>;
             bindings = <&kp N3>;
         };
         combo_t4 {
             layers = <0>;
             timeout-ms = <600>;
-            key-positions = <67 70>;
+            key-positions = <67 38>;
             bindings = <&kp N4>;
         };
         combo_t5 {
             layers = <0>;
             timeout-ms = <1000>;
-            key-positions = <64 70>;
+            key-positions = <64 38>;
             bindings = <&kp N5>;
         };
         combo_t6 {
             layers = <0>;
             timeout-ms = <1000>;
-            key-positions = <63 70>;
+            key-positions = <63 38>;
             bindings = <&kp N6>;
         };
 
