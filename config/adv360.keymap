@@ -213,7 +213,8 @@
             layers = <0>;
             timeout-ms = <500>;
             key-positions = <65 70>;
-            bindings = <&macro_both CAPS DE_HASH>;
+            // bindings = <&macro_both CAPS DE_HASH>;
+            bindings = <&kp N9>;
         };
         combo_m4_both {
             layers = <0>;
@@ -247,7 +248,7 @@
         &kp LGUI  &kp Q    &kp W  &kp E  &kp R  &kp T  &none                                                                         &none &kp DE_Z &kp U  &kp I     &kp O    &kp P       &mt LGUI DE_UDIA
         &kp LCTRL &kp A    &kp S  &kp D  &kp F  &kp G  &none                &none           &none &none &none                        &none &kp H    &kp J  &kp K     &kp L    &kp DE_ODIA &mt RCTRL DE_ADIA
         &kp LALT  &kp DE_Y &kp X  &kp C  &kp V  &kp B                                       &none &none                                    &kp N    &kp M  &kp COMMA &kp DOT  &kp DE_MINS &kp LALT
-        &none     &none    &none  &none  &none               &mt CAPS ENTER &mt DE_LABK TAB &none &none &mt LSHFT BSPC &lt LFN SPACE                &none  &none     &none    &none &none
+        &none     &none    &none  &none  &none               &mt CAPS ENTER &mt DE_LABK TAB &none &none &mt LSHFT BSPC &lt LFN SPACE                &none  &none     &none    &none       &kp DE_HASH
       >;
     };
     de {
