@@ -256,7 +256,7 @@
       display-name = "5 Sim Bone";
       bindings = <
         &kp ESC   &kbn_n1 &kbn_n2 &kbn_n3     &kbn_n4     &kbn_n5     &none                                                               &none &kbn_n6  &kbn_n7  &kbn_n8   &kbn_n9 &kbn_n0 &kp DE_MINS
-        &kp WIN   &kp J   &kp D   &kp U       &kp A       &kp X       &none                                                               &none &kp P    &kp H    &kp L     &kp M   &kp W   &kp DE_SS
+        &kp LGUI  &kp J   &kp D   &kp U       &kp A       &kp X       &none                                                               &none &kp P    &kp H    &kp L     &kp M   &kp W   &kp DE_SS
         &mo LCTRL &kp C   &kp T   &kp I       &kp E       &kp O       &none             &none          &none &none &none                  &none &kp B    &kp N    &kp R     &kp S   &kp G   &mt RCTRL Q
         &kp LALT  &kp F   &kp V   &kp DE_UDIA &kp DE_ADIA &kp DE_ODIA                                  &none &none                              &kp DE_Y &kp DE_Z &kp COMMA &kp DOT &kp K   &kp RALT
         &none     &none   &none   &none       &none                    &lt LBONE3 ENTER &lt LBONE4 TAB &none &none &mt LSHFT BSPC &lt LFN SPACE          &none    &none     &none   &none   &none
