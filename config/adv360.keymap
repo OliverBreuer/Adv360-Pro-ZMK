@@ -142,7 +142,7 @@
         };
 
         // für Combo M3, M4 in DE-für-Bone
-        macro_both: macro_both {
+        mcr_b: mcr_b {
             label = "Hold Both";
             compatible = "zmk,behavior-macro-two-param";
             #binding-cells = <2>;
@@ -208,34 +208,6 @@
             bindings = <&kp N6>;
         };
 
-        // Deutsch für Bone
-        combo_m3_both {
-            layers = <0>;
-            timeout-ms = <500>;
-            key-positions = <65 70>;
-            // bindings = <&macro_both CAPS DE_HASH>;
-            bindings = <&kp N9>;
-        };
-        combo_m4_both {
-            layers = <0>;
-            timeout-ms = <500>;
-            key-positions = <66 70>;
-            bindings = <&macro_both DE_LABK RALT>;
-        };
-        combo_shift_both {
-            layers = <0>;
-            timeout-ms = <200>;
-            key-positions = <69 70>;
-            bindings = <&macro_both LSHFT RSHFT>;
-        };
-
-        // DEUTSCH
-        combo_de_caps {
-            layers = <3>;
-            timeout-ms = <50>;
-            key-positions = <69 70>;
-            bindings = <&kp CAPS>;
-        };
     };
 
   keymap {
@@ -248,27 +220,27 @@
         &kp LGUI  &kp Q    &kp W  &kp E  &kp R  &kp T  &none                                                                         &none &kp DE_Z &kp U  &kp I     &kp O    &kp P       &mt LGUI DE_UDIA
         &kp LCTRL &kp A    &kp S  &kp D  &kp F  &kp G  &none                &none           &none &none &none                        &none &kp H    &kp J  &kp K     &kp L    &kp DE_ODIA &mt RCTRL DE_ADIA
         &kp LALT  &kp DE_Y &kp X  &kp C  &kp V  &kp B                                       &none &none                                    &kp N    &kp M  &kp COMMA &kp DOT  &kp DE_MINS &kp LALT
-        &none     &none    &none  &none  &none               &mt CAPS ENTER &mt DE_LABK TAB &none &none &mt LSHFT BSPC &lt LFN SPACE                &none  &none     &none    &none       &kp DE_HASH
+        &none     &none    &none  &none  &none               &mt LSHIFT ENTER &mt DE_LABK TAB &none &none &mt CAPS BSPC &lt LFN SPACE                &none  &none     &none    &none       &kp DE_HASH
       >;
     };
     de {
       display-name = "1 Deutsch";
       bindings = <
-        &kp DE_ACUT       &kp N1   &kp N2 &kp N3   &kp N4    &kp N5 &none                                                             &none &kp N6   &kp N7 &kp N8    &kp N9   &kp N0      &kp DE_SS
-        &mt LGUI DE_CIRC  &kp Q    &kp W  &kp E    &kp R     &kp T  &none                                                             &none &kp DE_Z &kp U  &kp I     &kp O    &kp P       &mt LGUI DE_UDIA
-        &mt LCTRL DE_HASH &kp A    &kp S  &kp D    &kp F     &kp G  &none          &none           &none &none &none                  &none &kp H    &kp J  &kp K     &kp L    &kp DE_ODIA &mt RCTRL DE_ADIA
-        &mt LALT DE_LABK  &kp DE_Y &kp X  &kp C    &kp V     &kp B                                 &none &none                              &kp N    &kp M  &kp COMMA &kp DOT  &kp DE_MINS &mt RALT DE_PLUS
-        &none             &none    &none  &kp LEFT &kp RIGHT        &mt CAPS ENTER &mt DE_LABK TAB &none &none &mt LSHFT BSPC &lt LFN SPACE          &none  &none     &none    &none &none
+        &kp DE_ACUT       &kp N1   &kp N2 &kp N3   &kp N4    &kp N5 &none                                                           &none &kp N6   &kp N7 &kp N8    &kp N9   &kp N0      &kp DE_SS
+        &mt LGUI DE_CIRC  &kp Q    &kp W  &kp E    &kp R     &kp T  &none                                                           &none &kp DE_Z &kp U  &kp I     &kp O    &kp P       &mt LGUI DE_UDIA
+        &mt LCTRL DE_HASH &kp A    &kp S  &kp D    &kp F     &kp G  &none           &none        &none &none &none                  &none &kp H    &kp J  &kp K     &kp L    &kp DE_ODIA &mt RCTRL DE_ADIA
+        &mt LALT DE_LABK  &kp DE_Y &kp X  &kp C    &kp V     &kp B                               &none &none                              &kp N    &kp M  &kp COMMA &kp DOT  &kp DE_MINS &mt RALT DE_PLUS
+        &none             &none    &none  &kp LEFT &kp RIGHT        &mt LSHFT ENTER &lt LDE2 TAB &none &none &mt CAPS BSPC &lt LFN SPACE          &none  &none     &none    &none &none
       >;
     };
     de_l2 {
       display-name = "2 Deutsch L2";
       bindings = <
-        &kp ESC   &none &none &none &none &none &none                                              &none &none     &none    &none    &none     &none &none
-        &kp LGUI  &none &none &none &none &none &none                                              &none &kp PG_UP &kp HOME &kp UP   &kp END   &none &none
-        &kp LCTRL &none &none &none &none &none &none      &none   &none &none &none               &none &kp PG_DN &kp LEFT &kp DOWN &kp RIGHT &none &kp RCTRL
-        &kp LALT  &none &none &none &none &none                    &none &none                           &none     &none    &none    &none     &none &kp RALT
-        &none     &none &none &none &none             &trans &none &none &none &mt LSHFT DEL &none                 &none    &none    &none     &none &none
+        &kp ESC   &none     &none    &none    &none     &none      &none                                      &none &none &none &none &none &none &none
+        &kp LGUI  &kp PG_UP &kp BSPC &kp UP   &kp DEL   &kp PG_DN  &none                                      &none &none &none &none &none &none &kp LGUI
+        &kp LCTRL &kp HOME  &kp LEFT &kp DOWN &kp RIGHT &kp END    &none     &none  &none &none &none         &none &none &none &none &none &none &kp RCTRL
+        &kp LALT  &kp ESC   &kp TAB  &kp INS  &kp ENTER &kp K_UNDO                  &none &none                     &none &none &none &none &none &kp RALT
+        &none     &none     &none    &none    &none                   &trans &trans &none &none &kp LSHFT &none           &none &none &none &none &none
       >;
     };
     sim_bone {
@@ -332,7 +304,7 @@
         &mo LAFN    &mo LABONE4 &kp CAPS    &kp LEFT    &kp RIGHT                     &kp BSPC &kp DEL &kp END  &kp PG_DN &kp ENTER &kp SPACE                         &kp UP      &kp DOWN    &none       &none       &mo LAFN
       >;
     };
-    ald_bone4 {
+    alt_bone4 {
       display-name = "9 Alt Sim Bone 4";
       bindings = <
         &none       &none       &none    &none      &none      &none      &to LADE                                                        &mo L_MOD   &none       &kp KP_NUMLOCK &kp TAB   &kp KP_SLASH &kp KP_ASTERISK &kp KP_MINUS
@@ -356,11 +328,11 @@
     fn {
       display-name = "11 Fn";
       bindings = <
-        &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &none                                        &none &kp F7 &kp F8     &kp F9 &kp F10 &kp F11 &kp F12
-        &trans &none  &none  &none  &none  &none  &none                                        &none &none  &none      &none  &none   &none   &none
-        &trans &none  &none  &none  &none  &none  &none       &none   &none &none &none        &none &none  &to L_META &none  &none   &none   &trans
-        &trans &none  &none  &none  &none  &none                      &none &none                    &none  &none      &none  &none   &none   &trans
-        &none  &none  &none  &none  &none               &none &kp DEL &none &none &none &trans              &none      &none  &none   &none   &none
+        &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &none                                                       &none &kp F7 &kp F8     &kp F9 &kp F10 &kp F11 &kp F12
+        &trans &none  &none  &none  &none  &none  &none                                                       &none &none  &none      &none  &none   &none   &none
+        &trans &none  &none  &none  &none  &none  &none       &none   &none               &none &none         &none &none  &to L_META &none  &none   &none   &trans
+        &trans &none  &none  &none  &none  &none                      &none               &none                     &none  &none      &none  &none   &none   &trans
+        &none  &none  &none  &none  &none          &mcr_b LSHFT RSHFT &mcr_b DE_LABK RALT &none &none &none &trans         &none      &none  &none   &none   &none
       >;
     };
     mod {
