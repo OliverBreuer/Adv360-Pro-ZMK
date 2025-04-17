@@ -221,17 +221,17 @@
         &kp LGUI  &kp Q    &kp W  &kp E  &kp R  &kp T  &none                                                                          &none &kp DE_Z &kp U  &kp I     &kp O    &kp P       &mt LGUI DE_UDIA
         &kp LCTRL &kp A    &kp S  &kp D  &kp F  &kp G  &none                 &none           &none &none &none                        &none &kp H    &kp J  &kp K     &kp L    &kp DE_ODIA &mt RCTRL DE_ADIA
         &kp LALT  &kp DE_Y &kp X  &kp C  &kp V  &kp B                                        &none &none                                    &kp N    &kp M  &kp COMMA &kp DOT  &kp DE_MINS &kp LALT
-        &none     &none    &none  &none  &none               &mt LSHIFT BSPC &mt DE_LABK TAB &none &none &mt CAPS ENTER &lt LFN SPACE                &none  &none     &none    &none       &kp DE_HASH
+        &none     &none    &none  &none  &none               &mt LSHIFT BSPC &mt DE_LABK TAB &none &none &mt CAPS ENTER &lt LFN SPACE                &none  &none     &none    &none       &none
       >;
     };
     de {
       display-name = "1 Deutsch";
       bindings = <
-        &kp DE_ACUT       &kp N1   &kp N2 &kp N3   &kp N4    &kp N5 &none                                                          &none &kp N6   &kp N7 &kp N8    &kp N9   &kp N0      &kp DE_SS
-        &mt LGUI DE_CIRC  &kp Q    &kp W  &kp E    &kp R     &kp T  &none                                                          &none &kp DE_Z &kp U  &kp I     &kp O    &kp P       &mt LGUI DE_UDIA
-        &mt LCTRL DE_HASH &kp A    &kp S  &kp D    &kp F     &kp G  &none          &none        &none &none &none                  &none &kp H    &kp J  &kp K     &kp L    &kp DE_ODIA &mt RCTRL DE_ADIA
-        &mt LALT DE_LABK  &kp DE_Y &kp X  &kp C    &kp V     &kp B                              &none &none                              &kp N    &kp M  &kp COMMA &kp DOT  &kp DE_MINS &mt RALT DE_PLUS
-        &none             &none    &none  &kp LEFT &kp RIGHT        &mt LSHFT BSPC &lt LDE2 TAB &none &none &mt CAPS ENTER &lt LFN SPACE          &none  &none     &none    &none &none
+        &kp DE_ACUT       &kp N1   &kp N2 &kp N3 &kp N4 &kp N5 &none                                                         &none &kp N6   &kp N7 &kp N8    &kp N9   &kp N0      &kp DE_SS
+        &mt LGUI DE_CIRC  &kp Q    &kp W  &kp E  &kp R  &kp T  &none                                                         &none &kp DE_Z &kp U  &kp I     &kp O    &kp P       &mt LGUI DE_UDIA
+        &mt LCTRL DE_HASH &kp A    &kp S  &kp D  &kp F  &kp G  &none         &none        &none &none &none                  &none &kp H    &kp J  &kp K     &kp L    &kp DE_ODIA &mt RCTRL DE_ADIA
+        &mt LALT DE_LABK  &kp DE_Y &kp X  &kp C  &kp V  &kp B                             &none &none                              &kp N    &kp M  &kp COMMA &kp DOT  &kp DE_MINS &mt RALT DE_PLUS
+        &none             &none    &none  &none  &none        &mt LSHFT BSPC &lt LDE2 TAB &none &none &mt CAPS ENTER &lt LFN SPACE          &none  &none     &none    &none &none
       >;
     };
     de_l2 {
@@ -248,9 +248,9 @@
       display-name = "3 Sim Bone";
       bindings = <
         &kp ESC   &kbn_n1 &kbn_n2 &kbn_n3     &kbn_n4     &kbn_n5     &none                                                             &none &kbn_n6  &kbn_n7  &kbn_n8   &kbn_n9 &kbn_n0 &kp DE_MINS
-        &kp LGUI  &kp J   &kp D   &kp U       &kp A       &kp X       &none                                                             &none &kp P    &kp H    &kp L     &kp M   &kp W   &kp DE_SS
+        &kp LGUI  &kp J   &kp D   &kp U       &kp A       &kp X       &none                                                             &none &kp P    &kp H    &kp L     &kp M   &kp W   &mt LGUI DE_SS
         &kp LCTRL &kp C   &kp T   &kp I       &kp E       &kp O       &none           &none          &none &none &none                  &none &kp B    &kp N    &kp R     &kp S   &kp G   &mt RCTRL Q
-        &kp LALT  &kp F   &kp V   &kp DE_UDIA &kp DE_ADIA &kp DE_ODIA                                &none &none                              &kp DE_Y &kp DE_Z &kp COMMA &kp DOT &kp K   &kp RALT
+        &kp LALT  &kp F   &kp V   &kp DE_UDIA &kp DE_ADIA &kp DE_ODIA                                &none &none                              &kp DE_Y &kp DE_Z &kp COMMA &kp DOT &kp K   &kp LALT
         &none     &none   &none   &none       &none                    &mt LSHFT BSPC &lt LBONE4 TAB &none &none &lt LBONE3 ENTER &lt LFN SPACE        &none    &none     &none   &none   &none
       >;
     };
@@ -268,10 +268,10 @@
       display-name = "5 Sim Bone 4";
       bindings = <
         &none  &none     &none    &none    &none     &none      &none                                  &none &none       &kp KP_NUMLOCK &kp TAB   &kp KP_SLASH &kp KP_ASTERISK &kp KP_MINUS
-        &trans &kp PG_UP &kp BSPC &kp UP   &kp DEL   &kp PG_DN  &none                                  &none &none       &kp KP_N7      &kp KP_N8 &kp KP_N9    &kp KP_PLUS     &kp DE_EQL
-        &trans &kp HOME  &kp LEFT &kp DOWN &kp RIGHT &kp END    &none    &none   &none &none &none     &none &none       &kp KP_N4      &kp KP_N5 &kp KP_N6    &kp KP_DOT      &mt RCTRL DOT
+        &trans &kp PG_UP &kp BSPC &kp UP   &kp DEL   &kp PG_DN  &none                                  &none &none       &kp KP_N7      &kp KP_N8 &kp KP_N9    &kp KP_PLUS     &kp KP_EQL
+        &trans &kp HOME  &kp LEFT &kp DOWN &kp RIGHT &kp END    &none    &none   &none &none &none     &none &none       &kp KP_N4      &kp KP_N5 &kp KP_N6    &kp KP_COMMA    &mt RCTRL KP_DOT
         &trans &kp ESC   &kp TAB  &kp INS  &kp ENTER &kp K_UNDO                  &none &none                 &kp DE_COLN &kp KP_N1      &kp KP_N2 &kp KP_N3    &kp DE_SEMI     &trans
-        &none  &none     &none    &none    &none                   &trans &trans &none &none &trans &trans               &none          &none     &none        &none           &none
+        &none  &none     &none    &none    &none                   &trans &trans &none &none &trans &kp KP_N0            &none          &none     &none        &none           &none
       >;
     };
 
