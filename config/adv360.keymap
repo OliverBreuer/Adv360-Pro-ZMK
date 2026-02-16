@@ -338,11 +338,11 @@
     fn {
       display-name = "11 Fn";
       bindings = <
-        &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &none                                                       &none &kp F7 &kp F8     &kp F9 &kp F10 &kp F11 &kp F12
-        &trans &none  &none  &none  &none  &none  &none                                                       &none &none  &none      &none  &none   &none   &none
-        &trans &none  &none  &none  &none  &none  &none       &none   &none               &none &none         &none &none  &to L_META &none  &none   &none   &trans
-        &trans &none  &none  &none  &none  &none                      &none               &none                     &none  &none      &none  &none   &none   &trans
-        &none  &none  &none  &none  &none          &mcr_b LSHFT RSHFT &mcr_b DE_LABK RALT &none &none &none &trans         &none      &none  &none   &trans  &none
+        &kp F1 &kp F2    &kp F3   &kp F4   &kp F5    &kp F6    &none                                                    &none &kp F7 &kp F8     &kp F9 &kp F10 &kp F11 &kp F12
+        &trans &kp PG_UP &kp BSPC &kp UP   &kp DEL   &kp PG_DN &none                                                    &none &none  &none      &none  &none   &none   &trans
+        &trans &kp HOME  &kp LEFT &kp DOWN &kp RIGHT &kp END   &none      &none &none               &none &none         &none &none  &to L_META &none  &none   &none   &trans
+        &trans &kp ESC   &kp TAB  &kp INS  &kp ENTER &kp K_UNDO                 &none               &none                     &none  &none      &none  &none   &trans  &trans
+        &none  &none     &none    &none    &none             &mcr_b LSHFT RSHFT &mcr_b DE_LABK RALT &none &none &none &trans         &none      &none  &none   &trans  &none
       >;
     };
     mod {
