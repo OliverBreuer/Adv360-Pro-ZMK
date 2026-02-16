@@ -230,7 +230,7 @@
         &kp LGUI  &kp Q    &kp W  &kp E  &kp R  &kp T  &none                                                                  &none &kp DE_Z &kp U  &kp I     &kp O    &kp P              &mmt LGUI DE_UDIA
         &kp LCTRL &kp A    &kp S  &kp D  &kp F  &kp G  &none              &none            &none &none &none                  &none &kp H    &kp J  &kp K     &kp L    &kp DE_ODIA        &mmt RCTRL DE_ADIA
         &kp LALT  &kp DE_Y &kp X  &kp C  &kp V  &kp B                                      &none &none                              &kp N    &kp M  &kp COMMA &kp DOT  &mmt RSHFT DE_MINS &kp LALT
-        &none     &none    &none  &none  &none           &mmt LSHIFT BSPC &mmt DE_LABK TAB &none &none &mmt CAPS ENTER &lt LFN SPACE         &none  &none     &none    &none              &none
+        &none     &none    &none  &none  &none           &mmt LSHIFT BSPC &mmt DE_LABK TAB &none &none &lt LFN ENTER &mmt CAPS SPACE         &none  &none     &none    &none              &none
       >;
     };
     de {
@@ -240,7 +240,7 @@
         &mmt LGUI DE_CIRC  &kp Q    &kp W  &kp E  &kp R  &kp T  &none                                                         &none &kp DE_Z &kp U  &kp I     &kp O    &kp P              &mmt LGUI DE_UDIA
         &mmt LCTRL DE_HASH &kp A    &kp S  &kp D  &kp F  &kp G  &none         &none        &none &none &none                  &none &kp H    &kp J  &kp K     &kp L    &kp DE_ODIA        &mmt RCTRL DE_ADIA
         &mmt LALT DE_LABK  &kp DE_Y &kp X  &kp C  &kp V  &kp B                             &none &none                              &kp N    &kp M  &kp COMMA &kp DOT  &mmt RSHFT DE_MINS &mmt RALT DE_PLUS
-        &none              &none    &none  &none  &none       &mmt LSHFT BSPC &lt LDE2 TAB &none &none &mmt CAPS ENTER &lt LFN SPACE         &none  &none     &none    &none              &none
+        &none              &none    &none  &none  &none       &mmt LSHFT BSPC &lt LDE2 TAB &none &none &lt LFN ENTER &mmt CAPS SPACE         &none  &none     &none    &none              &none
       >;
     };
     de_l2 {
@@ -260,7 +260,7 @@
         &kp LGUI  &kp J   &kp D   &kp U       &kp A       &kp X       &none                                                            &none &kp P    &kp H    &kp L     &kp M   &kp W        &mmt LGUI DE_SS
         &kp LCTRL &kp C   &kp T   &kp I       &kp E       &kp O       &none          &none          &none &none &none                  &none &kp B    &kp N    &kp R     &kp S   &kp G        &mmt RCTRL Q
         &kp LALT  &kp F   &kp V   &kp DE_UDIA &kp DE_ADIA &kp DE_ODIA                               &none &none                              &kp DE_Y &kp DE_Z &kp COMMA &kp DOT &mmt RSHFT K &kp LALT
-        &none     &none   &none   &none       &none                  &mmt LSHFT BSPC &lt LBONE4 TAB &none &none &lt LBONE3 ENTER &lt LFN SPACE        &none    &none     &none   &none        &none
+        &none     &none   &none   &none       &none                  &mmt LSHFT BSPC &lt LBONE4 TAB &none &none &lt LFN ENTER &lt LBONE3 SPACE        &none    &none     &none   &none        &none
       >;
     };
     sim_bone3 {
