@@ -22,6 +22,9 @@
 #define L_MOD 12
 #define L_META 13
 
+// damit bei wiederholtem Keypress von mmt-Keys die Hold-Funktion aktiviert wird
+#define QUICK_TAP_TERM 0
+
 / {
     behaviors {
       #include "macros.dtsi"
